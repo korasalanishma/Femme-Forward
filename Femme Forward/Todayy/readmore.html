@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Empowerment Hub</title>
+    <link rel="stylesheet" href="readmore.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggles = document.querySelectorAll('.toggle');
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    this.nextElementSibling.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="sign_up.html">Sign Up</a></li>
+                <li><a href="sign_in.html">Sign In</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Welcome to the Women's Empowerment Hub</h1>
+            <p>Our mission is to provide opportunities and support for women in rural areas through various programs and initiatives. We aim to foster growth in startups, technology, finance, mental health awareness, safety, and networking.</p>
+            <h2>Our Programs</h2>
+            <div class="programs">
+                <div class="program">
+                    <h3 class="toggle">Startup Support</h3>
+                    <div class="details">
+                        <p>We offer resources and mentorship for women looking to start their own businesses. This includes business planning, funding opportunities, and marketing strategies. Our goal is to empower women to turn their innovative ideas into successful ventures.</p>
+                    </div>
+                </div>
+                <div class="program">
+                    <h3 class="toggle">Technical Training</h3>
+                    <div class="details">
+                        <p>Our technical training programs cover a wide range of topics including coding, web development, and data science. We partner with tech companies to provide hands-on training and certification. This ensures that women gain the skills needed to thrive in the tech industry.</p>
+                    </div>
+                </div>
+                <div class="program">
+                    <h3 class="toggle">Financial Literacy</h3>
+                    <div class="details">
+                        <p>We provide workshops and resources on financial management, including budgeting, investing, and saving for the future. Our goal is to empower women with the knowledge to achieve financial independence. We believe that financial literacy is a key component of overall empowerment.</p>
+                    </div>
+                </div>
+                <div class="program">
+                    <h3 class="toggle">Mental Health Awareness</h3>
+                    <div class="details">
+                        <p>Mental health is a crucial aspect of overall well-being. We offer resources and support for mental health awareness, including counseling services and stress management workshops. Our aim is to create a supportive environment where women can seek help and improve their mental health.</p>
+                    </div>
+                </div>
+                <div class="program">
+                    <h3 class="toggle">Safety Workshops</h3>
+                    <div class="details">
+                        <p>We conduct workshops on personal safety, self-defense, and online security to ensure women feel safe and secure in all aspects of their lives. These workshops are designed to empower women with the knowledge and skills to protect themselves. We believe that safety is a fundamental right for everyone.</p>
+                    </div>
+                </div>
+                <div class="program">
+                    <h3 class="toggle">Networking Opportunities</h3>
+                    <div class="details">
+                        <p>Networking is key to personal and professional growth. We host events and provide platforms for women to connect, share experiences, and build supportive networks. Our networking opportunities help women to build relationships that can lead to new opportunities and collaborations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

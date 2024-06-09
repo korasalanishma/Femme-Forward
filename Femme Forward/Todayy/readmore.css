@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ed29ed, #3498db);
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+    background: #f9f9f9;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-image: url(r_img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.navbar ul li a {
+    color: #000; /* Text color for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Target specific links and apply background color */
+.navbar ul li a[href="index.html"],
+.navbar ul li a[href="#"],
+.navbar ul li a[href="contact.html"],
+.navbar ul li a[href="sign_in.html"],
+.navbar ul li a[href="sign_up.html"] {
+    background-color: #df7fec; /* Background color for specified links */
+}
+
+.navbar ul li a:hover {
+    background: #94c9ef; /* Hover background color */
+    color: #000; /* Hover text color */
+}
+
+.navbar ul li a.active {
+    background: #df7fec; /* Active background color */
+    color: #000; /* Active text color */
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.programs {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.program {
+    margin-bottom: 20px;
+}
+
+.toggle {
+    cursor: pointer;
+    color: #000; /* Black text color */
+    font-weight: bold;
+    padding: 5px 10px; /* Adjusted padding */
+    display: inline-block; /* Display inline-block for better wrapping */
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    background-color: #f4a4ff; /* Grey background color */
+    margin-bottom: 5px; /* Added margin-bottom */
+}
+
+.toggle:hover {
+    background-color: #94c9ef; /* Adjusted hover color */
+}
+
+.details {
+    display: none;
+    padding-left: 20px;
+    margin-top: 10px;
+    border-left: 3px solid #3498db;
+}
+
+.details.active {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
